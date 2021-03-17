@@ -1,0 +1,24 @@
+{
+  "name": "lit-random-vid",
+  "version": "1.0.0",
+  "description": "Lit-element component that returns a random video from youtube",
+  "main": "lit-random-vid.js",
+  "module": "lit-random-vid.js",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "scripts": {
+    "start": "polymer serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexvkcr/lit-random-vid.git"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexvkcr/lit-random-vid/issues"
+  },
+  "homepage": "https://github.com/alexvkcr/lit-random-vid#readme"
+}
