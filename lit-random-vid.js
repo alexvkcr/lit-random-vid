@@ -3,11 +3,16 @@ import { LitElement, html, css} from 'lit-element';
 class LitRandomVid extends LitElement {
   
   static get properties() { return {
-    code: {type: String}
+    code: {type: String},
+    width: {type: Number},
+    height: {type: Number}
   }}  
 
   constructor() {
     super();
+    
+    this.width = 320;
+    this.height = 180;
 
     let range = (start,stop) =>{
       let result=[];
@@ -31,23 +36,16 @@ class LitRandomVid extends LitElement {
   }
 
   static get styles() {
-    return [ css`
-    :host{
-      --lit-random-vid-width: 320px;
-      --lit-random-vid-height: 180px;
-    }
-    .lit-video{
-      width: --lit-random-vid-width;
-      height: --lit-random-vid-height;
-    }
-    `];
+    return [ css``];
   }
 
   render(){
     return html`
-      <iframe class="lit-video" width="320" height="180"
-        src="https://www.youtube.com/embed/${this.code}">
-      </iframe>
+    <iframe 
+      width="${this.width}"
+      height="${this.height}"
+      src="https://www.youtube.com/embed/${this.code}">
+    </iframe>
     `;
   }
   
